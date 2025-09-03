@@ -44,3 +44,20 @@
     cursor: pointer;
     transition: 0.3s;
 }
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.footer-bottom-right{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.footer-email-input:hover{
+    border: 4px solid #B415FF;
+}
+.footer-subscribe:hover{
+    transform: scale(1.1);
+    transition: 1.1s;
+}
