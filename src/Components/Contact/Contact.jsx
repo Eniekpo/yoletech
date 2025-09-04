@@ -7,27 +7,26 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 
 const Contact = () => {
 
-  const [result, setResult] = React.useState("");
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "c63d46bd-a503-4a57-b7d7-3e2adbd1b193");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const object = object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
-    });
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: json
+    }).then((res) => res.json());
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+    if (res.success) {
+      alert(res.message);
     }
   };
 
@@ -69,7 +68,6 @@ const Contact = () => {
           <label htmlFor="">Write your message here</label>
           <textarea name="message" rows='6' placeholder='Enter your message'></textarea>
           <button type='submit' className="contact-submit">Submit Now</button>
-          <p className="contact-result">{result}</p>
         </form>
       </div>
     </div>
