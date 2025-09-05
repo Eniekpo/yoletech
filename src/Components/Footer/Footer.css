@@ -84,4 +84,15 @@
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
+
+    .footer-top-right {
+        display: block;
+    }
+
+    .footer-subscribe {
+        margin-top: 20px;
+        width: 80px;
+        padding: 15px
+    }
+
 }

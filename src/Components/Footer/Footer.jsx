@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import footer_logo from '../../assets/footer_logo.svg'
 import user_icon from '../../assets/user_icon.svg'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
             <img src={user_icon} alt="" />
             <input type="email" placeholder='Enter your email' />
           </div>
-          <div className="footer-subscribe">Subscribe</div>
+          <div className="footer-subscribe"><AnchorLink className='anchor-link' offset={50} href='#contact'>Subscribe</AnchorLink></div>
         </div>
       </div>
       <hr />

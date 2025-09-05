@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 40px 170px;
 }
 
 .about-title {
@@ -117,7 +117,7 @@
         align-items: start;
     }
 
-    .about-title {
+    .about-title h1 {
         font-size: 50px;
         padding: 0;
     }
