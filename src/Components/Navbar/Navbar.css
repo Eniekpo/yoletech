@@ -46,6 +46,13 @@
     /* margin: auto; */
 }
 
+.logo{
+    display: flex;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
 .anchor-link {
     text-decoration: none;
     color: #fff;
