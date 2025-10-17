@@ -35,6 +35,17 @@
     gap: 80px;
 }
 
+.about-img{
+    background: #e0c6e6;
+    width: 170px;
+    height: 190px;
+    padding: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
 .about-para {
     display: flex;
     flex-direction: column;

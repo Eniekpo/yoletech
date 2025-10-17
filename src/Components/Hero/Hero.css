@@ -7,7 +7,15 @@
 }
 
 .hero img {
-    margin-top: 80px;
+    margin-top: 40px;
+    background: #e0c6e6;
+    width: 170px;
+    height: 190px;
+    padding: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid #fff;
 }
 
 .hero h1 {
@@ -64,7 +72,14 @@
 @media(max-width:768px) {
     .hero img {
         margin-top: 30px;
-        width: 260px;
+        background: #e0c6e6;
+        width: 120px;
+        height: 150px;
+        padding: 8px;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        border: 2px solid #fff;
     }
 
     .hero h1 {
