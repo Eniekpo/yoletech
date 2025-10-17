@@ -54,7 +54,7 @@ const Contact = () => {
 
             <div className="contact-detai">
               <img src={location_icon} alt="" />
-              <p>Location</p>
+              <p>Yenagoa-Bayelsa State, Nigeria.</p>
             </div>
 
           </div>
